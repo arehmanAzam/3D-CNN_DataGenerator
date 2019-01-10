@@ -89,14 +89,14 @@ labels_validation=findLabels(partition['validation'], labels_val)
 ```
 
 
-Now pass the parameters to the main DataGenerator Class
+Pass the above created parameters to the main DataGenerator Class
 
 ```
 training_generator = DataGenerator(partition['train'], labels_training, **params)
 validation_generator = DataGenerator(partition['validation'], labels_validation, **params)
 ```
 
-Now pass the generators to your model.fit_generator() function for training the model
+Give generators to your model.fit_generator() function for training the model
 
 ```
 model.fit_generator(...
