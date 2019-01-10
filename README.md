@@ -17,7 +17,7 @@ Numpy         | 15.4.0
 Matplotlib    | 3.0.2
 
 ## Prior Work
-
+We assume that your dataset is in the form of frames. These frames are located in every class-folder of training and validation. The frames of every instance are named with unique sequence numbers.
 Before getting to this point of work, your code might look like this 
 
 ```
