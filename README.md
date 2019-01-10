@@ -16,7 +16,7 @@ Tensorflow    | 1.8.0
 Numpy         | 15.4.0
 Matplotlib    | 3.0.2
 
-## Using DataGenerator Class
+## Prior Work
 
 Before getting to this point of work, your code might look like this 
 
@@ -32,7 +32,7 @@ model.Sequential()
 # Train model on your dataset
 model.fit_generator()
 ```
-#### Using DataGenerator
+## Using DataGenerator Class
 In python headers where packages are imported code this line
 ```
 from DataGenerator import *
