@@ -78,6 +78,7 @@ params={'dim': (frames_chunk,frame_width,frame_height),
         'batch_size': frames_chunk*number_of_batches,
         'n_classes': num_classes,
         'shuffle': False
+        'frames_chunk' : frames_chunk
         }
 ```
 
