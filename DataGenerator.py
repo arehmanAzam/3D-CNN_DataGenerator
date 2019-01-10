@@ -33,28 +33,16 @@ class DataGenerator(keras.utils.Sequence):
         # Find list of IDs
         y = np.empty((self.real_batchsize_custom,self.n_classes), dtype=float)
 		
-		initial_point=0
-		final_point=self.frames_chunk-1
-        for x in range(self.real_batchsize_custom):
-			
-			indexes_orig=indexes[initial_point:final_point]
+	initial_point=0
+	final_point=self.frames_chunk-1
+        for x in range(self.real_batchsize_custom):	
+	    indexes_orig=indexes[initial_point:final_point]
             list_IDs_temp = [self.list_IDs[k] for k in indexes_orig]
-        # for i, ID in enumerate(list_IDs_temp):
-        #     # Store sample
-        #
-        #     # Convert to a numpy array and return it.
-        #     class_id=ID.split('/')[5]
-        #     # if("running"==class_id):
-        #     #     print('mismatch 1')
-
-        # Generate data
-			
             X_in, y_in = self.__data_generation(list_IDs_temp)
             X[x]=X_in
             y[x]=y_in[0]
-			initial_point=final_point+1
-			final_point=final_point+(self.frames_chunk-1)
-			
+	    initial_point=final_point+1
+            final_point=final_point+(self.frames_chunk-1)	
         return X,y
         #return [X, X, X],[y,y,y]
 
