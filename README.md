@@ -105,3 +105,10 @@ model.fit_generator(...
         ..
         )
 ```
+## Authors
+* Gulraiz Khan (Setting-up base of this project and generator with one batch)
+* Abdulrehman Azam (Upgraded the generator for multiple batches)
+
+##License
+This project is under GNU General Public License v3.0 see [License](https://github.com/arehmanAzam/3D-CNN_DataGenerator/blob/master/LICENSE) file
+
