@@ -3,10 +3,9 @@ DataGenerator for 3D-CNN in keras and tensorflow
 
 This repo contains the code of data generator for 3DCNN architectures. The code was built using multiple resources but most of the content is taken from [Shervine Amidi](https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly)
 
-## Getting Started
+## Prerequisites
 We expect to have proir knowledge of keras and tensorflow. Also see keras documentation for [fitgenerator](https://keras.io/models/sequential/#fit_generator) and [ImageGenerator](https://keras.io/preprocessing/image/#imagedatagenerator-class)
 
-### Prerequisites
 
 You can use any version of the packages but we have used the following versions: 
 
@@ -17,7 +16,7 @@ Tensorflow    | 1.8.0
 Numpy         | 15.4.0
 Matplotlib    | 3.0.2
 
-### Getting Started
+## Using DataGenerator Class
 
 Before getting to this point of work, your code might look like this 
 
@@ -33,7 +32,7 @@ model.Sequential()
 # Train model on your dataset
 model.fit_generator()
 ```
-#### 
+#### Using DataGenerator
 In python headers where packages are imported code this line
 ```
 from DataGenerator import *
