@@ -23,6 +23,7 @@ Before getting to this point of work, your code might look like this
 ```
 
 # Load entire dataset
+from find_labels import 
 path_dataset_train='/home/activity/train'
 path_dataset_val='/home/activity/val'
 
